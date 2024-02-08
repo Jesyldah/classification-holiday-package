@@ -21,7 +21,7 @@ if __name__ == '__main__':
     holiday_package_data_path = os.path.join(os.path.dirname(
         os.path.abspath(__file__)), 'holiday_package_data.csv')
     
-    package_sale_data = pd.read_csv(holiday_package_data_path, encoding="utf-8")
+    package_sale_data = pd.read_csv(holiday_package_data_path)
     
     package_sale_data = package_sale_data.drop(columns = ['CustomerID'])
 
